@@ -1,6 +1,6 @@
 
 // Google Apps Script URL
-const SCRIPT_URL = "https://script.google.com/a/macros/spumail.net/s/AKfycbwYqhqolz409QnkIEBZzcgmn7S5FmSbvuAivWS2N50tpYMqeE3ncha448sEKFCQ7JL4ig/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw8pEL8lBSy7YGOddp0Jo_SYxQJiorNIO_UmaGSanoE7clMpvQt1NpKJKGHKRU8vw1-Vw/exec";
 
 // รายการสินค้า
 const products = [
