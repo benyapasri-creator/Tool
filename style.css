@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: #153b50;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #8de0d0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #dff5f0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn, button {
+    background: #168b79;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.products, .cart {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.product img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.product h3, .product p {
+    margin: 12px 0;
+}
+
+.cart input, .cart textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.cart button {
+    margin: 15px;
+}
+
+#cartItems {
+    margin: 20px;
+    line-height: 2;
+}
+
+.packing {
+    background: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background: #153b50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #packing, #packing * {
+        visibility: visible;
+    }
+
+    #packing {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: none;
+    }
+
+    #packing button {
+        display: none;
+    }
+}
